@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuôi Tôi - Dự Án Thiện Nguyện</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                orange: '#FF6B35',
+                yellow: '#FFE600',
+                red: '#FF3F3F',
+                cream: '#FFF9F0',
+                dark: '#292524'
+              }
+            },
+            animation: {
+              'blink-text': 'blink-text 1s infinite',
+            },
+            keyframes: {
+              'blink-text': {
+                '0%, 100%': { color: '#FFE600', textShadow: '0 0 10px rgba(255, 230, 0, 0.5)' },
+                '50%': { color: '#FF6B35', textShadow: 'none' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFF9F0;
+        color: #292524;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #FF6B35 0%, #F94C10 100%);
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+    </style>
+    <script type="module" crossorigin src="/Feed-me-master/assets/index-CS2IbtF8.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
